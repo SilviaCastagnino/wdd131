@@ -86,7 +86,7 @@ main {
         "img2 text2 text2";
 }
 
-.card:first-child h3 {
+.card:first-child h2 {
     grid-area: title;
 }
 
@@ -103,7 +103,7 @@ main {
     justify-self: center;
 }
 
-.card:first-child h4 {
+.card:first-child h3 {
     grid-area: subtitle;
 }
 
@@ -118,7 +118,7 @@ main {
     padding-right: 20px;
 }
 
-.card h3 {
+.card h2 {
     background-color: blue;
     text-align: center;
     padding: 15px;
@@ -128,7 +128,7 @@ main {
     border-top-left-radius: 8px;
 }
 
-.card h4 {
+.card h3 {
     text-align: center;
     border-bottom: 1px solid black;
     margin-left: 30%;
