@@ -3,6 +3,7 @@
     --secondary: #E0F2F7;
     --accent1-color: #455A64;
     --accent2-color: #212121;
+    --text-light: #FFFFFF;
 }
 
 body {
@@ -13,6 +14,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
 }
 
 header h1 {
@@ -39,24 +46,114 @@ nav a {
     color: black;
     padding-top: 18px;
     padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 4px;
+
 }
 
 main {
-    flex: 1;
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 3px;
 }
 
 .card {
-    padding-left: 8px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+
+}
+
+.card:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+        "title title title"
+        "text1 text1 img1"
+        "subtitle subtitle subtitle"
+        "img2 text2 text2";
+}
+
+.card:first-child h3 {
+    grid-area: title;
+}
+
+.card:first-child p:first-of-type {
+    grid-area: text1;
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+
+}
+
+.card:first-child img:first-of-type {
+    grid-area: img1;
+    justify-self: center;
+}
+
+.card:first-child h4 {
+    grid-area: subtitle;
+}
+
+.card:first-child img:last-of-type {
+    grid-area: img2;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.card:first-child p:last-of-type {
+    grid-area: text2;
+    padding-right: 20px;
+}
+
+.card h3 {
+    background-color: blue;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card h4 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 10px;
 }
 
 .card img {
-    height: auto;
     width: 150px;
+    height: auto;
+}
+
+.card:last-child {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 300px;
+}
+
+.card ul {
+    align-self: center;
+}
+
+.card li {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 footer {
