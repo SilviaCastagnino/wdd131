@@ -146,6 +146,11 @@ img:hover {
     transform: scale(1.05);
 }
 
+figcaption {
+    padding-top: 8px;
+    text-align: center;
+}
+
 footer {
     position: relative;
     background-color: var(--primary);
