@@ -128,7 +128,7 @@ picture img {
 footer {
     position: relative;
     background-color: var(--primary);
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
