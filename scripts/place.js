@@ -16,7 +16,7 @@ function displayData() {
     document.getElementById('weather').innerHTML = `
     <div class="title">
         <h2>Weather </h2>
-        <img src="images/wheater cloud.svg" alt="weather cloud">
+        <img src="images/wheater-cloud.svg" alt="weather cloud">
     </div>
     <strong>Temperature:</strong> <span>....</span>
     <strong>Conditions:</strong><span>......</span>
