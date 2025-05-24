@@ -86,11 +86,10 @@ picture img {
 }
 
 .title {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    justify-self: center;
+
 }
 
 .title h2 {
@@ -180,5 +179,13 @@ footer {
         height: 3px;
         background: #e74c3c;
         margin-top: 8px;
+    }
+
+    .title {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
     }
 }
