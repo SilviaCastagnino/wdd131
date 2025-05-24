@@ -104,7 +104,11 @@ picture img {
 }
 
 .title img {
-    height: 75px;
+    display: none;
+}
+
+.title p {
+    font-size: 50px;
 }
 
 .weather>*:nth-child(odd) {
