@@ -1,0 +1,179 @@
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #009246;
+    color: white;
+    text-align: center;
+    border-bottom: 25px solid white;
+}
+
+header h1 {
+    font-size: 3rem;
+    display: inline-block;
+    letter-spacing: 8px;
+    transform: scaleX(1.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+picture {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-bottom: 10px solid rgba(206, 43, 55, 0.9);
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+}
+
+.data h2 {
+    background: rgba(206, 43, 55, 0.9);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.data>*:nth-child(odd) {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.data>*:nth-child(even) {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+    padding: 0.5rem;
+}
+
+.title {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.title h2 {
+    background: rgba(206, 43, 55, 0.9);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title img {
+    height: 75px;
+}
+
+.weather>*:nth-child(odd) {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.weather>*:nth-child(even) {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+
+
+footer {
+    position: relative;
+    background-color: #009246;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        border-bottom: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    picture img {
+        border-bottom: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: "hero hero";
+    }
+
+    main picture {
+        grid-area: hero;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .data {
+        position: absolute;
+        top: 20%;
+        left: 2rem;
+        width: 25%;
+        max-width: 300px;
+        margin-top: 60px
+    }
+
+    .weather {
+        position: absolute;
+        top: 60%;
+        right: 2rem;
+        width: 25%;
+        max-width: 300px;
+    }
+
+    .data h2::after,
+    .weather h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #e74c3c;
+        margin-top: 8px;
+    }
+}
