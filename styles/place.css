@@ -1,3 +1,8 @@
+:root {
+    --primary: #009246;
+    --secondary: rgba(206, 43, 55, 0.9);
+}
+
 body {
     background-color: white;
     font-family: "Roboto", sans-serif;
@@ -6,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #009246;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     border-bottom: 25px solid white;
@@ -39,7 +44,7 @@ picture img {
     object-fit: cover;
     object-position: center;
     display: block;
-    border-bottom: 10px solid rgba(206, 43, 55, 0.9);
+    border-bottom: 10px solid var(--secondary);
 }
 
 .data {
@@ -50,7 +55,7 @@ picture img {
 }
 
 .data h2 {
-    background: rgba(206, 43, 55, 0.9);
+    background: var(--secondary);
     color: white;
     padding: 12px 25px;
     border-radius: 6px;
@@ -89,7 +94,7 @@ picture img {
 }
 
 .title h2 {
-    background: rgba(206, 43, 55, 0.9);
+    background: var(--secondary);
     color: white;
     padding: 12px 25px;
     border-radius: 6px;
@@ -117,7 +122,7 @@ picture img {
 
 footer {
     position: relative;
-    background-color: #009246;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding-top: 20px;
