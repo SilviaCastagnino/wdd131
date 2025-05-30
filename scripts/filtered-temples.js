@@ -72,7 +72,7 @@ const temples = [
         templeName: "Rome, Italy",
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
-        area: 419010,
+        area: 41010,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
     },
