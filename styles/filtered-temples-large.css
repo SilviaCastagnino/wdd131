@@ -1,0 +1,33 @@
+@media screen and (min-width: 900px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+}
