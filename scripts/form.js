@@ -99,8 +99,6 @@ function initializePage() {
     } else {
         populateProducts();
     }
-
-    initializeFooter();
 }
 
 document.addEventListener('DOMContentLoaded', initializePage);
