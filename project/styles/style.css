@@ -516,7 +516,7 @@ footer .sociallinks img:hover {
     content: "OUR LOCATION";
     display: block;
     font-family: 'Anton', sans-serif;
-    color: var(--primary-color);
+    color: rgb(44, 44, 175);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     letter-spacing: 2px;
