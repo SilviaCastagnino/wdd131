@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Project: travel agency - Homepage">
+    <meta name="author" content="Silvia Castagnino">
+    <title>Homepage | Travel Paradise</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/logo.png" media="(min-width: 1000px)">
+            <source srcset="images/logo.png" media="(min-width: 500px)">
+            <img src="images/logo.png" alt="Travel agency logo" loading="lazy" width="150" height="100">
+        </picture>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="travels.html">Travels</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture class="logo">
+                <source srcset="images/hero.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-small.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="A hero" loading="lazy" width="150" height="100">
+            </picture>
+            <h1>Paradise Travel</h1>
+            <article>
+                <h2>The Paradise Promise</h2>
+                <p>
+                    <strong>Purpose:</strong> Our purpose is to craft unforgettable journeys without borders, where
+                    luxury,
+                    adventure, and authenticity converge to exceed every expectation, because every traveler deserves
+                    their own paradise.
+                    <br>
+                    <strong>Mission:</strong> Our mission is to craft bespoke journeys that transcend ordinary
+                    itineraries, creating immersive
+                    experiences where luxury blends seamlessly with the authentic essence of each destination. Every
+                    detail is meticulously
+                    curated to transform dreams into reality, exceeding the expectations of even the most discerning
+                    travelers.
+                    We strive to be the bridge between our clients' deepest desires and the world's most enchanting
+                    places.
+                    <br>
+                    <strong>Creed:</strong> We believe travel is the highest form of self-discovery. Every destination
+                    is an opportunity to evolve;
+                    every experience, a treasure to cherish. We believe traveling is more than movement, it’s emotion,
+                    discovery, connection. Every
+                    place has a soul, and every traveler deserves to find it. We meticulously select trusted partners,
+                    operate with
+                    integrity and passion, and obsess over details, because true luxury is feeling at home in every
+                    corner of the world.
+                    <br>
+                    <strong>Motto:</strong> Find Yourself Where the Map Ends.
+                </p>
+            </article>
+        </div>
+
+        <section class="trip-descriptions">
+            <h2>Why choose us?</h2>
+
+            <div class="trip-grid">
+                <article class="trip-card">
+                    <img src="images/img1.webp" alt="Destinations Beyond the Ordinary" loading="lazy" width="150"
+                        height="100">
+                    <h3>Destinations Beyond the Ordinary</h3>
+                    <p>We don’t just book trips—we craft access to hidden gems and exclusive locales. From private
+                        island retreats to cultural
+                        immersions, your Paradise is waiting where others don’t look</p>
+                    <ul>
+                        <li>Locals-only experiences</li>
+                        <li>Hidden gems, zero crowds</li>
+                        <li>VIP entry to iconic sites</li>
+                    </ul>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/img2.webp" alt="Details That Define Luxury" loading="lazy" width="150"
+                        height="100">
+                    <h3>Details That Define Luxury</h3>
+                    <p>Meticulous planning meets effortless enjoyment. Think private yacht charters, VIP airport
+                        transfers, and accommodations
+                        selected for their soul—not just their stars.</p>
+                    <ul>
+                        <li>24/7 dedicated support</li>
+                        <li>All logistics handled</li>
+                        <li>Tailored to your rhythm</li>
+                    </ul>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/img3.webp" alt="Guided by Passion, Perfected by Expertise" loading="lazy"
+                        width="150" height="100">
+                    <h3>Guided by Passion, Perfected by Expertise</h3>
+                    <p>Our handpicked local experts and 24/7 concierge ensure you don’t just visit—you connect. Safety,
+                        sustainability, and
+                        storytelling at every step.</p>
+                    <ul>
+                        <li>Experts, not just guides</li>
+                        <li>Sustainable partnerships</li>
+                        <li>Stories, not just stops</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <div class="trips-contact">
+            <h1>Your tailor-made paradise awaits you!</h1>
+            <p>Design your journey today!</p>
+            <a href="contact.html" class="trips-button">Contact Us</a>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2025</span> | ❤️⚓Silvia Castagnino⚓❤️ | Travel Paradise</p>
+        <p id="lastModified"></p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

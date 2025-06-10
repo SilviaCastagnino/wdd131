@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Project: travel agency - Contact us">
+    <meta name="author" content="Silvia Castagnino">
+    <title>Contact Us | Travel Paradise</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/logo.png" media="(min-width: 1000px)">
+            <source srcset="images/logo.png" media="(min-width: 500px)">
+            <img src="images/logo.png" alt="Travel agency logo" loading="lazy" width="150" height="100">
+        </picture>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="travels.html">Travels</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titleForm">Contact Us Form</h1>
+        <form id="travelForm" method="get" action="travel.html">
+            <fieldset>
+                <legend><span class="icon">👤</span> Your Information</legend>
+                <div class="form-group">
+                    <label for="firstName">First Name<span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name<span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]+">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><span class="icon">✈️</span> Travel Details</legend>
+                <div class="form-group">
+                    <label for="message">Your Message<span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="submit" value="Send Form">
+            </div>
+        </form>
+
+        <div class="titles">
+            <h1>Company information</h1>
+        </div>
+        <div class="informations">
+            <p><strong>Address:</strong> 710 waterfall, bluewater, CO 81235, USA</p>
+            <p><strong>Phone:</strong> +1 (435) 543-2323</p>
+            <p><strong>Email:</strong> TravelParadise@gmail.com</p>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4205.905580564469!2d12.714693852595492!3d42.551369358613925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1743789891910!5m2!1sit!2sit"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2025</span> | ❤️⚓Silvia Castagnino⚓❤️ | Travel Paradise</p>
+        <p id="lastModified"></p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
