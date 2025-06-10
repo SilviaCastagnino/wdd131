@@ -354,7 +354,7 @@ footer .sociallinks img:hover {
 #travelForm input[type="email"],
 #travelForm input[type="tel"],
 #travelForm textarea {
-    width: 100%;
+    width: 90%;
     padding: 0.8rem;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
